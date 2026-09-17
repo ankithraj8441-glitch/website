@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X, ArrowUpRight } from 'lucide-react';
+import logoImg from '../assets/logo.png';
 
 export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -24,7 +25,7 @@ export default function Navbar() {
             aria-label="RenderDrops Homepage"
           >
             <img
-              src="/logo.png"
+              src={logoImg}
               alt="Render Drops"
               className="h-9 sm:h-11 w-auto object-contain transition-all duration-300 group-hover:scale-105 drop-shadow-[0_2px_12px_rgba(227,27,46,0.35)]"
             />

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { servicesData } from '../data/studioData';
 import { Layout, Video, Camera, Megaphone, ArrowUpRight } from 'lucide-react';
+import logoImg from '../assets/logo.png';
 
 const icons = { Layout, Video, Camera, Megaphone };
 
@@ -90,7 +91,7 @@ export default function ServicesSection() {
             >
               <div className="absolute w-72 h-72 bg-rd-red/12 blur-[100px] rounded-full pointer-events-none" />
               <img
-                src="/logo.png"
+                src={logoImg}
                 alt="Render Drops"
                 className="w-52 max-w-[80%] h-auto object-contain relative z-10 drop-shadow-[0_16px_48px_rgba(227,27,46,0.4)] animate-float"
               />

@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { ArrowUpRight } from 'lucide-react';
+import heroBg from '../assets/hero-bg.png';
 
 /* ─── Cycling words ─────────────────────────────────────────────────────── */
 const CYCLING_WORDS = ['IMPOSSIBLE', 'UNFORGETTABLE', 'CINEMATIC'];
@@ -63,7 +64,7 @@ export default function Hero() {
       <div
         className="absolute inset-0"
         style={{
-          backgroundImage: 'url(/hero-bg.png)',
+          backgroundImage: `url(${heroBg})`,
           backgroundSize: 'cover',
           backgroundPosition: 'center center',
           backgroundRepeat: 'no-repeat',

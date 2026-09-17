@@ -1,5 +1,6 @@
 import React from 'react';
 import { Mail, ArrowUpRight } from 'lucide-react';
+import logoImg from '../assets/logo.png';
 
 function InstagramIcon({ className }) {
   return (
@@ -34,7 +35,7 @@ export default function Footer() {
           <div className="space-y-5">
             <a href="#" className="inline-block group">
               <img
-                src="/logo.png"
+                src={logoImg}
                 alt="Render Drops"
                 className="h-14 sm:h-16 w-auto object-contain transition-all duration-300 group-hover:scale-105 drop-shadow-[0_4px_20px_rgba(227,27,46,0.3)]"
               />
@@ -122,10 +123,10 @@ export default function Footer() {
           </p>
           <div className="flex items-center gap-4 text-xs">
             <a
-              href="/admin"
+              href="#contact"
               className="text-zinc-700 hover:text-zinc-400 transition-colors tracking-[0.2em] uppercase font-medium text-[11px]"
             >
-              STUDIO LOGIN
+              STUDIO CONTACT
             </a>
             <span className="w-1 h-1 rounded-full bg-zinc-800" />
             <span className="text-zinc-800 font-mono text-[11px]">V1.0</span>
